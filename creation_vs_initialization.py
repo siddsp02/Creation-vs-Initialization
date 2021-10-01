@@ -20,7 +20,6 @@ from typing import NamedTuple, Union
 
 class Card(tuple):
     def __new__(cls, *args):
-
         suits = {"clubs", "diamonds", "hearts", "spades"}
         special_cards = {11: "Jack", 12: "Queen", 13: "King", 1: "Ace"}
 
