@@ -1,6 +1,3 @@
-from typing import NamedTuple, Union
-
-
 # As an example, lets say that a class "Card" needs to be
 # created such that any instance of the object itself behaves
 # exactly like a tuple, but prints out (and has a __repr__)
@@ -19,6 +16,9 @@ from typing import NamedTuple, Union
 
 
 class Card(tuple):
+    """A tuple which stores information about a card in a
+    deck. Is created, but not initialized, as it is a tuple.
+    """
     def __new__(cls, *args):
         suits = {"clubs", "diamonds", "hearts", "spades"}
         special_cards = {11: "Jack", 12: "Queen", 13: "King", 1: "Ace"}
