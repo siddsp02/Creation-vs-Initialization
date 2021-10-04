@@ -19,6 +19,7 @@ class Card(tuple):
     """A tuple which stores information about a card in a
     deck. Is created, but not initialized, as it is a tuple.
     """
+    
     def __new__(cls, *args):
         suits = {"clubs", "diamonds", "hearts", "spades"}
         special_cards = {11: "Jack", 12: "Queen", 13: "King", 1: "Ace"}
